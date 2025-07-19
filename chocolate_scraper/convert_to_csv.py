@@ -2,8 +2,8 @@ import json
 import csv
 
 
-input_file = r'C:\Users\Admin\PycharmProjects\pythonProject16\chocolate_scraper\products.json'
-output_file = r'C:\Users\Admin\PycharmProjects\pythonProject16\chocolate_scraper\products.csv'
+input_file = r'C:\Users\Admin\PycharmProject\pythonProject1\chocolate_scraper\products.json'
+output_file = r'C:\Users\Admin\PycharmProject\pythonProject1\chocolate_scraper\products.csv'
 
 with open(input_file, 'r', encoding='utf-8') as f:
     content = f.read()
