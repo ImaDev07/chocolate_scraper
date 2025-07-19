@@ -17,13 +17,12 @@ try:
     products1 = json.loads(parts[0])
     products2 = json.loads(parts[1])
 except json.JSONDecodeError as e:
-    print(f'Ошибка при разборе JSON: {e}')
+    print(f'Ошибка: {e}')
     exit(1)
 
 products = products1 + products2
 
 if not products:
-    print('Список товаров пуст.')
     exit(1)
 
 fieldnames = products[0].keys()
@@ -33,4 +32,4 @@ with open(output_file, 'w', newline='', encoding='utf-8') as f:
     writer.writeheader()
     writer.writerows(products)
 
-print(f'CSV успешно создан: {output_file}')
+print(f'CSV файл успешно создан: {output_file}')
